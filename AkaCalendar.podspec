@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "Akabab" => 'ycribier@student.42.fr' }
 
-  spec.platform = :ios, "9.1"
+  spec.platform = :ios, "8.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/akabab/AkaCalendar.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "AkaCalendar/**/*.{h,swift}"
