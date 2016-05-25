@@ -10,6 +10,12 @@
 		91EBEFBD1CF5A0BC00D15D07 /* AkaCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 91EBEFBC1CF5A0BC00D15D07 /* AkaCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91EBEFC41CF5A0BC00D15D07 /* AkaCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBEFB91CF5A0BC00D15D07 /* AkaCalendar.framework */; };
 		91EBEFC91CF5A0BC00D15D07 /* AkaCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFC81CF5A0BC00D15D07 /* AkaCalendarTests.swift */; };
+		91EBEFDA1CF5A6F800D15D07 /* AkaCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFD41CF5A6F800D15D07 /* AkaCalendarView.swift */; };
+		91EBEFDB1CF5A6F800D15D07 /* AkaCalendarViewDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFD51CF5A6F800D15D07 /* AkaCalendarViewDayCell.swift */; };
+		91EBEFDC1CF5A6F800D15D07 /* AkaCalendarViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFD61CF5A6F800D15D07 /* AkaCalendarViewFlowLayout.swift */; };
+		91EBEFDD1CF5A6F800D15D07 /* AkaCalendarViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFD71CF5A6F800D15D07 /* AkaCalendarViewHeaderView.swift */; };
+		91EBEFDE1CF5A6F800D15D07 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFD81CF5A6F800D15D07 /* Defaults.swift */; };
+		91EBEFDF1CF5A6F800D15D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBEFD91CF5A6F800D15D07 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		91EBEFC31CF5A0BC00D15D07 /* AkaCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AkaCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EBEFC81CF5A0BC00D15D07 /* AkaCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkaCalendarTests.swift; sourceTree = "<group>"; };
 		91EBEFCA1CF5A0BC00D15D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91EBEFD41CF5A6F800D15D07 /* AkaCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkaCalendarView.swift; sourceTree = "<group>"; };
+		91EBEFD51CF5A6F800D15D07 /* AkaCalendarViewDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkaCalendarViewDayCell.swift; sourceTree = "<group>"; };
+		91EBEFD61CF5A6F800D15D07 /* AkaCalendarViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkaCalendarViewFlowLayout.swift; sourceTree = "<group>"; };
+		91EBEFD71CF5A6F800D15D07 /* AkaCalendarViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkaCalendarViewHeaderView.swift; sourceTree = "<group>"; };
+		91EBEFD81CF5A6F800D15D07 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		91EBEFD91CF5A6F800D15D07 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,9 @@
 		91EBEFBB1CF5A0BC00D15D07 /* AkaCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				91EBEFD31CF5A6F800D15D07 /* AkaCalendarView */,
+				91EBEFD81CF5A6F800D15D07 /* Defaults.swift */,
+				91EBEFD91CF5A6F800D15D07 /* ViewController.swift */,
 				91EBEFBC1CF5A0BC00D15D07 /* AkaCalendar.h */,
 				91EBEFBE1CF5A0BC00D15D07 /* Info.plist */,
 			);
@@ -84,6 +99,17 @@
 				91EBEFCA1CF5A0BC00D15D07 /* Info.plist */,
 			);
 			path = AkaCalendarTests;
+			sourceTree = "<group>";
+		};
+		91EBEFD31CF5A6F800D15D07 /* AkaCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				91EBEFD41CF5A6F800D15D07 /* AkaCalendarView.swift */,
+				91EBEFD51CF5A6F800D15D07 /* AkaCalendarViewDayCell.swift */,
+				91EBEFD61CF5A6F800D15D07 /* AkaCalendarViewFlowLayout.swift */,
+				91EBEFD71CF5A6F800D15D07 /* AkaCalendarViewHeaderView.swift */,
+			);
+			path = AkaCalendarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EBEFDF1CF5A6F800D15D07 /* ViewController.swift in Sources */,
+				91EBEFDD1CF5A6F800D15D07 /* AkaCalendarViewHeaderView.swift in Sources */,
+				91EBEFDA1CF5A6F800D15D07 /* AkaCalendarView.swift in Sources */,
+				91EBEFDE1CF5A6F800D15D07 /* Defaults.swift in Sources */,
+				91EBEFDB1CF5A6F800D15D07 /* AkaCalendarViewDayCell.swift in Sources */,
+				91EBEFDC1CF5A6F800D15D07 /* AkaCalendarViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +342,7 @@
 		91EBEFCE1CF5A0BC00D15D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +353,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.AkaCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		91EBEFCF1CF5A0BC00D15D07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +413,7 @@
 				91EBEFCF1CF5A0BC00D15D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91EBEFD01CF5A0BC00D15D07 /* Build configuration list for PBXNativeTarget "AkaCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +422,7 @@
 				91EBEFD21CF5A0BC00D15D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
